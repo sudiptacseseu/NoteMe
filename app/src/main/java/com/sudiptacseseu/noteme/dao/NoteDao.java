@@ -11,12 +11,9 @@ import java.util.List;
 
 @Dao
 public interface NoteDao {
-    //CRUD
+
     @Insert
     void insert(Note note);
-
-//    @Update
-//    void updateNoteItem(Note note);
 
     @Query("DELETE FROM note_table")
     void deleteAll();
@@ -29,5 +26,8 @@ public interface NoteDao {
 
     @Query("SELECT * FROM note_table ORDER BY note_deadline DESC")
     LiveData<List<Note>> getAllToDos();
+
+    @Query("SELECT * FROM note_table WHERE note_status = :noteStatus ORDER BY note_deadline DESC")
+    LiveData<List<Note>> getAllToDosByStatus(String noteStatus);
 
 }

@@ -26,6 +26,10 @@ public class NoteDatabaseCallRepository {
         return allToDos;
     }
 
+    public LiveData<List<Note>> getAllToDosByStatus(String noteStatus) {
+        return noteDao.getAllToDosByStatus(noteStatus);
+    }
+
     public void insert(Note note){
          new InsertAsyncTask(noteDao).execute(note);
     }
