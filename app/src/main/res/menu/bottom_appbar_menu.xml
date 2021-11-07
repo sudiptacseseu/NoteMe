@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuOpen"
+        android:icon="@drawable/ic_open"
+        android:title="Open"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuInProgress"
+        android:icon="@drawable/ic_in_progress"
+        android:title="In-progress"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuTest"
+        android:icon="@drawable/ic_test"
+        android:title="Test"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuDone"
+        android:icon="@drawable/ic_done"
+        android:title="Done"
+        app:showAsAction="always"/>
+</menu>
