@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NoteMe</string>
+    <string name="task_name">Task Name: </string>
+    <string name="created_date">Created Date: </string>
+    <string name="deadline_date">Deadline: </string>
+    <string name="no_note">No task yet! Please press the \"+\" icon below to add a task.</string>
+    <string name="enter_your_input">Enter Your Input</string>
+    <string name="save_url_text">Save URL</string>
+    <string name="save">Save </string>
 </resources>
