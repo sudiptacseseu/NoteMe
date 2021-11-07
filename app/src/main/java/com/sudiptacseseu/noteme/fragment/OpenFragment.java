@@ -1,5 +1,6 @@
 package com.sudiptacseseu.noteme.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.sudiptacseseu.noteme.R;
+import com.sudiptacseseu.noteme.activity.NoteDetailsActivity;
 import com.sudiptacseseu.noteme.adapter.NoteListAdapter;
 import com.sudiptacseseu.noteme.databinding.FragmentOpenBinding;
 import com.sudiptacseseu.noteme.model.Note;
@@ -35,6 +37,7 @@ public class OpenFragment extends Fragment implements OnItemClickListener {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_open, container, false);
@@ -50,7 +53,7 @@ public class OpenFragment extends Fragment implements OnItemClickListener {
             @Override
             public void onChanged(@Nullable List<Note> notes) {
 
-                //update the cached copy of todos in the adapter
+                // Update the cached copy of notes in the adapter
                 if (notes != null && notes.size()!= 0) {
                     noteListAdapter.setToDos(notes);
                     binding.noTaskTextViewId.setVisibility(View.INVISIBLE);
@@ -64,9 +67,9 @@ public class OpenFragment extends Fragment implements OnItemClickListener {
     }
     @Override
     public void onItemClick(Note note) {
-//        Intent intent = new Intent(getContext(), NoteDetailsActivity.class);
-//        intent.putExtra("currentClickedNote", note);
-//        startActivity(intent);
+        Intent intent = new Intent(getContext(), NoteDetailsActivity.class);
+        intent.putExtra("currentClickedNote", note);
+        startActivity(intent);
 
     }
 }
