@@ -5,6 +5,7 @@
     <color name="colorAccent">#ed6415</color>
 
     <color name="colorActivityBackground">#fff7e6</color>
+    <color name="colorBottomNavBackground">#ffbd96</color>
 
     <color name="colorSecondary">#1a237e</color>
     <color name="purple_200">#FFBB86FC</color>

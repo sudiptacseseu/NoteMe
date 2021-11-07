@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_home.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/drawable/curved_background.xml" value="0.26510416666666664" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/drawable/ic_add.xml" value="0.2599591419816139" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_home.xml" value="0.21" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_main.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_splash.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/menu/bottom_appbar_menu.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/menu/menu_main.xml" value="0.24479166666666666" />
       </map>
     </option>
   </component>
