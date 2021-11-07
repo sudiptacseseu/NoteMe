@@ -25,6 +25,10 @@ public class ToDoViewModel extends AndroidViewModel {
         return allToDos;
     }
 
+    public LiveData<List<Note>> getToDosByStatus(String noteStatus) {
+        return noteDatabaseCallRepository.getAllToDosByStatus(noteStatus);
+    }
+
     public void insert(Note note) {
         noteDatabaseCallRepository.insert(note);
     }
