@@ -7,4 +7,15 @@
     <string name="enter_your_input">Enter Your Input</string>
     <string name="save_url_text">Save URL</string>
     <string name="save">Save </string>
+    <string name="hint_task">Task Name</string>
+    <string name="hint_description">Write Description</string>
+    <string name="save_text">Submit</string>
+    <string name="empty_not_saved">Please fill up every field!</string>
+    <string name="empty_name_not_saved">Task name can\'t be empty!</string>
+    <string name="empty_description_not_saved">Description can\'t be empty!</string>
+    <string name="deadline">Deadline:</string>
+    <string name="status">Status:</string>
+    <string name="url">URL</string>
+    <string name="email">E-mail</string>
+    <string name="phone">Phone</string>
 </resources>

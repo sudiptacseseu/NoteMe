@@ -3,8 +3,6 @@ package com.sudiptacseseu.noteme.activity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,7 +44,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new OpenFragment())
                 .commit();
 
-        binding.addTaskFab.setOnClickListener(this);
+        binding.addNoteFab.setOnClickListener(this);
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -76,9 +74,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         int id = view.getId();
 
-        if (id == R.id.addTaskFab) {
-//            Intent intent = new Intent(HomeActivity.this, AddTasksActivity.class);
-//            startActivity(intent);
+        if (id == R.id.addNoteFab) {
+            Intent intent = new Intent(HomeActivity.this, AddNoteActivity.class);
+            startActivity(intent);
         }
     }
 }
