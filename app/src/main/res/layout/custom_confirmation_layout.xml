@@ -6,8 +6,8 @@
     android:background="@color/colorActivityBackground">
 
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_gravity="center"
         android:src="@drawable/ic_task_saved"
         android:id="@+id/logoId"
@@ -34,6 +34,8 @@
         android:layout_gravity="center"
         android:paddingStart="@dimen/layout_padding_medium"
         android:paddingEnd="@dimen/layout_padding_medium"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_too_small"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:textColor="@android:color/white"

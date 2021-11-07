@@ -18,7 +18,9 @@
     <string name="url">URL</string>
     <string name="email">E-mail</string>
     <string name="phone">Phone</string>
-    <string name="ok">OK</string>
+    <string name="ok">Ok</string>
     <string name="description">Description:</string>
     <string name="task_saved_successfully">Task Saved \nSuccessfully</string>
+    <string name="edit_note_fab">Edit Note Fab</string>
+    <string name="add_note_fab">Add note fab</string>
 </resources>

@@ -10,9 +10,21 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorActivityBackground"
+        fab:layout_constraintTop_toTopOf="parent"
+        fab:layout_constraintBottom_toBottomOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:padding="@dimen/layout_padding_small"
         tools:context=".activity.AddNoteActivity"
         android:background="@color/colorActivityBackground">
@@ -34,6 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@id/deleteButtonId"
             app:layout_constraintStart_toStartOf="parent">
 
@@ -61,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            app:layout_constraintTop_toBottomOf="@id/deleteButtonId"
+            fab:layout_constraintTop_toTopOf="@id/createdLayoutId"
             app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
@@ -167,7 +180,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/phoneLayoutId"
@@ -176,8 +189,8 @@
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/emailImageButtonId"
                 style="@style/Widget.AppCompat.ImageButton"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:background="@android:color/transparent"
                 android:foreground="@drawable/ic_email" />
 
@@ -185,7 +198,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/email"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:textSize="@dimen/text_size_small"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
@@ -206,8 +219,8 @@
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/phoneImageButtonId"
                 style="@style/Widget.AppCompat.ImageButton"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:background="@android:color/transparent"
                 android:foreground="@drawable/ic_phone" />
 
@@ -215,7 +228,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/phone"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:textSize="@dimen/text_size_small"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
@@ -236,8 +249,8 @@
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/urlImageButtonId"
                 style="@style/Widget.AppCompat.ImageButton"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:background="@android:color/transparent"
                 android:foreground="@drawable/ic_url" />
 
@@ -245,25 +258,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/url"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:textSize="@dimen/text_size_small"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/editNoteFab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginEnd="@dimen/fab_margin_right"
-            android:layout_marginBottom="@dimen/fab_margin_bottom"
-            app:srcCompat="@drawable/ic_edit"
-            android:tint="@android:color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:contentDescription="Edit Note Fab" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editNoteFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        app:srcCompat="@drawable/ic_edit"
+        android:tint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/edit_note_fab" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

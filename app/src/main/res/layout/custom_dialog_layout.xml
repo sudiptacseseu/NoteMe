@@ -6,30 +6,44 @@
     android:background="@color/colorActivityBackground">
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_gravity="center"
         android:src="@drawable/ic_url"
         android:id="@+id/logoId" />
+
+    <LinearLayout
+        android:id="@+id/taskNameLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:paddingStart="@dimen/layout_padding_medium"
+        android:paddingEnd="@dimen/layout_padding_medium">
 
     <EditText
         android:id="@+id/dialogEditTextId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_your_input"
+        android:textSize="@dimen/text_size_too_small"
         android:ems="10"
-        android:layout_marginTop="16dp"
         android:inputType="textPersonName">
 
     </EditText>
+
+    </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/okButtonId"
         android:backgroundTint="@color/dialogButtonColor"
         android:text="@string/save_url_text"
         android:textAllCaps="false"
+        android:textSize="@dimen/text_size_too_small"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        android:textStyle="bold"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
