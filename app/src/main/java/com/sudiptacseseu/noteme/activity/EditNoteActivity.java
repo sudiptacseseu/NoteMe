@@ -51,7 +51,7 @@ public class EditNoteActivity extends AppCompatActivity implements View.OnClickL
 
         //Customize the ActionBar
         final ActionBar actionBar = getSupportActionBar();
-        Util.customizeActionBar(Objects.requireNonNull(actionBar), this, "Edit Tasks");
+        Util.customizeActionBar(Objects.requireNonNull(actionBar), this, "Edit Task");
 
         if (getIntent() != null) {
             currentNote = (Note) getIntent().getSerializableExtra("currentNote");
