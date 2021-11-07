@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelStoreOwner;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.sudiptacseseu.noteme.R;
+import com.sudiptacseseu.noteme.activity.EditNoteActivity;
 import com.sudiptacseseu.noteme.model.Note;
 import com.sudiptacseseu.noteme.utils.OnItemClickListener;
 import com.sudiptacseseu.noteme.viewmodel.ToDoViewModel;
@@ -90,9 +91,9 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NoteVi
             editButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    Intent intent = new Intent(context, EditNoteActivity.class);
-//                    intent.putExtra("currentNote", noteList.get(getBindingAdapterPosition()));
-//                    context.startActivity(intent);
+                    Intent intent = new Intent(context, EditNoteActivity.class);
+                    intent.putExtra("currentNote", noteList.get(getBindingAdapterPosition()));
+                    context.startActivity(intent);
                 }
             });
             deleteButton.setOnClickListener(new View.OnClickListener() {

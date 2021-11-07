@@ -8,6 +8,7 @@
     <color name="colorBottomNavBackground">#ffbd96</color>
     <color name="textColor">#924645</color>
     <color name="dialogButtonColor">#94db60</color>
+    <color name="colorGreen">#4dbd28</color>
 
     <color name="colorSecondary">#1a237e</color>
     <color name="purple_200">#FFBB86FC</color>
