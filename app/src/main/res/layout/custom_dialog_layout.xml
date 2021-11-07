@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="24dp"
+    android:padding="@dimen/layout_padding_medium"
     android:orientation="vertical"
     android:background="@color/colorActivityBackground">
 
@@ -23,15 +23,16 @@
 
     </EditText>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/okButtonId"
         android:backgroundTint="@color/dialogButtonColor"
-        android:background="@color/dialogButtonColor"
         android:text="@string/save_url_text"
         android:textAllCaps="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@android:color/white"
         />
