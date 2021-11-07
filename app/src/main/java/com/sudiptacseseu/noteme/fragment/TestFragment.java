@@ -2,7 +2,6 @@ package com.sudiptacseseu.noteme.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.sudiptacseseu.noteme.R;
 import com.sudiptacseseu.noteme.activity.NoteDetailsActivity;
 import com.sudiptacseseu.noteme.adapter.NoteListAdapter;
-import com.sudiptacseseu.noteme.databinding.FragmentOpenBinding;
+import com.sudiptacseseu.noteme.databinding.FragmentLayoutBinding;
 import com.sudiptacseseu.noteme.model.Note;
 import com.sudiptacseseu.noteme.utils.OnItemClickListener;
 import com.sudiptacseseu.noteme.viewmodel.ToDoViewModel;
@@ -33,14 +32,14 @@ public class TestFragment extends Fragment implements OnItemClickListener {
 
     ToDoViewModel toDoViewModel;
     private NoteListAdapter noteListAdapter;
-    FragmentOpenBinding binding;
+    FragmentLayoutBinding binding;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_open, container, false);
+                inflater, R.layout.fragment_layout, container, false);
         toDoViewModel = new ViewModelProvider(this).get(ToDoViewModel.class);
         View view = binding.getRoot();
 
@@ -53,7 +52,6 @@ public class TestFragment extends Fragment implements OnItemClickListener {
             @Override
             public void onChanged(@Nullable List<Note> notes) {
 
-                Log.d("length", String.valueOf(notes.size()));
                 //update the cached copy of todos in the adapter
                 if (notes != null && notes.size()!= 0) {
                     noteListAdapter.setToDos(notes);

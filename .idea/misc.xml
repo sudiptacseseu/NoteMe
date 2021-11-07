@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/drawable/bottom_nav_color.xml" value="0.2609375" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/drawable/curved_background.xml" value="0.26510416666666664" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/drawable/custom_edittext_background.xml" value="0.2609375" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/drawable/custom_spinner_background.xml" value="0.2609375" />
@@ -28,6 +29,8 @@
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/toolbar.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/menu/bottom_appbar_menu.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/menu/menu_main.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1359375" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1359375" />
       </map>
     </option>
   </component>

@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.sudiptacseseu.noteme.R;
 import com.sudiptacseseu.noteme.activity.NoteDetailsActivity;
 import com.sudiptacseseu.noteme.adapter.NoteListAdapter;
-import com.sudiptacseseu.noteme.databinding.FragmentOpenBinding;
+import com.sudiptacseseu.noteme.databinding.FragmentLayoutBinding;
 import com.sudiptacseseu.noteme.model.Note;
 import com.sudiptacseseu.noteme.utils.OnItemClickListener;
 import com.sudiptacseseu.noteme.viewmodel.ToDoViewModel;
@@ -32,7 +32,7 @@ public class OpenFragment extends Fragment implements OnItemClickListener {
 
     ToDoViewModel toDoViewModel;
     private NoteListAdapter noteListAdapter;
-    FragmentOpenBinding binding;
+    FragmentLayoutBinding binding;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -40,7 +40,7 @@ public class OpenFragment extends Fragment implements OnItemClickListener {
 
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_open, container, false);
+                inflater, R.layout.fragment_layout, container, false);
         toDoViewModel = new ViewModelProvider(this).get(ToDoViewModel.class);
         View view = binding.getRoot();
 
