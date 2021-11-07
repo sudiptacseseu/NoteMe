@@ -18,4 +18,5 @@
     <string name="url">URL</string>
     <string name="email">E-mail</string>
     <string name="phone">Phone</string>
+    <string name="description">Description:</string>
 </resources>

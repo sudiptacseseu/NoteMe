@@ -3,6 +3,7 @@
     <dimen name="fab_margin_bottom">24dp</dimen>
     <dimen name="layout_padding_large">32dp</dimen>
     <dimen name="layout_padding_medium">24dp</dimen>
+    <dimen name="layout_padding_small">12dp</dimen>
 
     <dimen name="text_size_extra_large">20sp</dimen>
     <dimen name="text_size_large">18sp</dimen>
