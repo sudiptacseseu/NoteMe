@@ -13,19 +13,20 @@
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/drawable/ic_phone.xml" value="0.2609375" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/actionbar_layout.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_add_note.xml" value="0.22" />
-        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_edit_note.xml" value="0.240625" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_edit_note.xml" value="0.25" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_home.xml" value="0.21" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_main.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_note_details.xml" value="0.240625" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/activity_splash.xml" value="0.24479166666666666" />
-        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/custom_confirmation_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/custom_confirmation_layout.xml" value="0.5" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/custom_dialog_layout.xml" value="0.33" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/custom_url_layout.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/fragment_done.xml" value="0.20481927710843373" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/fragment_in_progress.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/fragment_layout.xml" value="0.240625" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/fragment_open.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/fragment_test.xml" value="0.24479166666666666" />
-        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/recyclerview_item.xml" value="0.33" />
+        <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/recyclerview_item.xml" value="0.25" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/layout/toolbar.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/menu/bottom_appbar_menu.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/Sudipta_CST/Android Projects/NoteMe/app/src/main/res/menu/menu_main.xml" value="0.24479166666666666" />

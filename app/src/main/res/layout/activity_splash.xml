@@ -11,9 +11,7 @@
     android:gravity="center"
     tools:context="com.sudiptacseseu.noteme.activity.SplashActivity">
 
-
-
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:id="@+id/splashIconId"
@@ -29,8 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="NoteMe"
-        android:textSize="24dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_size_extra_large"
         android:layout_marginTop="24dp"
         android:textColor="@android:color/black"
         android:textStyle="bold"
