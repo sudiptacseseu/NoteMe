@@ -1,6 +1,8 @@
 package com.sudiptacseseu.noteme.utils;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -14,6 +16,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 
 import com.sudiptacseseu.noteme.R;
+import com.sudiptacseseu.noteme.activity.EditNoteActivity;
+import com.sudiptacseseu.noteme.activity.HomeActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.AbstractMap;
@@ -52,7 +56,7 @@ public class Util {
         actionBar.setDisplayShowTitleEnabled(false);
     }
 
-    public static void customDialog(final Activity context, String hintText, Drawable logoId, OnEditTextClickListener onEditTextClickListener) {
+    public static void customDialog(Activity context, String hintText, Drawable logoId, OnEditTextClickListener onEditTextClickListener) {
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(context).setCancelable(false);
         LayoutInflater inflater = context.getLayoutInflater();
@@ -76,8 +80,25 @@ public class Util {
                 alertDialog.dismiss();
             }
         });
+    }
 
+    public static void noteSaveDialog(Activity context) {
 
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(context).setCancelable(false);
+        LayoutInflater inflater = context.getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.custom_confirmation_layout, null);
+        dialogBuilder.setView(dialogView);
 
+        Button buttonDelete = dialogView.findViewById(R.id.okButtonId);
+        buttonDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, HomeActivity.class);
+                context.startActivity(intent);
+                context.finish();
+            }
+        });
+        AlertDialog alertDialog = dialogBuilder.create();
+        alertDialog.show();
     }
 }

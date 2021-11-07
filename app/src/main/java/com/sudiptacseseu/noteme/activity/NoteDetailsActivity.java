@@ -47,9 +47,9 @@ public class NoteDetailsActivity extends AppCompatActivity {
        binding.editNoteFab.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-//               Intent intent = new Intent(NoteDetailsActivity.this, EditNoteActivity.class);
-//               intent.putExtra("currentNote", currentNote);
-//               startActivity(intent);
+               Intent intent = new Intent(NoteDetailsActivity.this, EditNoteActivity.class);
+               intent.putExtra("currentNote", currentNote);
+               startActivity(intent);
            }
        });
 
@@ -66,9 +66,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
                        startActivity(intent);
                    }
                }, 1000);
-
            }
        });
-
     }
 }

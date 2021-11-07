@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="@color/colorActivityBackground">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_task_saved"
+        android:id="@+id/logoId"
+        />
+
+        <TextView
+            android:id="@+id/confirmationTextViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/task_saved_successfully"
+            android:textColor="@color/colorGreen"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold">
+
+        </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/okButtonId"
+        android:backgroundTint="@color/dialogButtonColor"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:paddingStart="@dimen/layout_padding_medium"
+        android:paddingEnd="@dimen/layout_padding_medium"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

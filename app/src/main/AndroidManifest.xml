@@ -20,6 +20,7 @@
         <activity android:name="com.sudiptacseseu.noteme.activity.HomeActivity"/>
         <activity android:name="com.sudiptacseseu.noteme.activity.AddNoteActivity"/>
         <activity android:name="com.sudiptacseseu.noteme.activity.NoteDetailsActivity"/>
+        <activity android:name="com.sudiptacseseu.noteme.activity.EditNoteActivity"/>
     </application>
 
 </manifest>
